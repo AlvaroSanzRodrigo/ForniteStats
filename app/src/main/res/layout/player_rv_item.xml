@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:padding="8dp"
+        >
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/secondary_text_dark"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/player_rv_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Title"
+                    android:textSize="20dp"
+                    android:padding="14dp"
+                    android:lines="1"
+                    android:textColor="@color/colorAccent"/>
+
+            <TextView
+                    android:id="@+id/player_rv_item_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Value"
+                    android:textSize="20dp"
+                    android:padding="14dp"
+                    android:textColor="@color/colorAccent"/>
+
+            <TextView
+                    android:id="@+id/player_rv_item_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rank"
+                    android:textSize="20dp"
+                    android:padding="14dp"
+                    android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
