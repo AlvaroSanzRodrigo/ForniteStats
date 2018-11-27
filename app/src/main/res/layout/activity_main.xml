@@ -16,7 +16,7 @@
             android:padding="14dp">
 
         <android.support.design.widget.TextInputLayout
-                android:layout_width="138dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content">
 
             <EditText
@@ -35,20 +35,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:entries="@array/platforms"/>
-
-        <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Search"
-                android:onClick="searchPlayer"/>
     </LinearLayout>
-
 
     <android.support.v7.widget.RecyclerView
             app:layoutManager="android.support.v7.widget.GridLayoutManager"
             android:id="@+id/rv_player"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"/>
 
+    <android.support.design.widget.FloatingActionButton
+            android:layout_marginTop="142dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_search"
+            android:onClick="searchPlayer"/>
 </LinearLayout>
